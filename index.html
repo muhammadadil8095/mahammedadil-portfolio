@@ -887,6 +887,123 @@
       background: #d5d0e4;
       color: #403657
     }
+    .cover-recover {
+      background: #e6c9b8;
+      color: #4e3028
+    }
+
+    .cover-recover .recover-orbit {
+      position: absolute;
+      width: 330px;
+      height: 330px;
+      border: 1px solid rgba(109, 63, 46, .28);
+      border-radius: 50%;
+      box-shadow: 0 0 0 36px rgba(109, 63, 46, .045), 0 0 0 78px rgba(109, 63, 46, .04);
+      right: -62px;
+      top: 38px
+    }
+
+    .recover-panel {
+      position: relative;
+      z-index: 1;
+      width: 72%;
+      min-width: 295px;
+      max-width: 430px;
+      padding: 20px;
+      background: #fffaf4;
+      border: 1px solid rgba(92, 58, 42, .15);
+      border-radius: 10px;
+      box-shadow: 14px 19px 0 rgba(97, 59, 42, .12), 0 24px 40px rgba(97, 59, 42, .12);
+      transform: rotate(-4deg) translateY(10px);
+      transition: transform .4s
+    }
+
+    .project-card:hover .recover-panel {
+      transform: rotate(-1deg) translateY(3px)
+    }
+
+    .recover-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #eadbd0;
+      font: 700 9px var(--display);
+      letter-spacing: .09em;
+      color: #76513f
+    }
+
+    .recover-status {
+      padding: 5px 7px;
+      background: #f7e6dc;
+      color: #a94e32;
+      border-radius: 4px;
+      font-size: 7px
+    }
+
+    .recover-title {
+      margin: 16px 0 4px;
+      font: 600 21px var(--display);
+      letter-spacing: -.05em;
+      color: #3d302a
+    }
+
+    .recover-subtitle {
+      font: 500 8px var(--display);
+      color: #927968
+    }
+
+    .recover-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 17px
+    }
+
+    .recover-stat {
+      padding: 10px;
+      background: #f3e8df;
+      border-radius: 5px
+    }
+
+    .recover-stat span {
+      display: block;
+      color: #8b7464;
+      font: 600 7px var(--display);
+      margin-bottom: 5px
+    }
+
+    .recover-stat strong {
+      display: block;
+      color: #49362c;
+      font: 600 20px var(--display);
+      letter-spacing: -.04em
+    }
+
+    .recover-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-top: 1px solid #eee3d9;
+      padding-top: 9px;
+      margin-top: 9px;
+      font: 600 8px var(--display);
+      color: #745a4b
+    }
+
+    .recover-row i {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #df805e
+    }
+
+    .recover-row b {
+      margin-left: auto;
+      font-size: 7px;
+      color: #b65b3b
+    }
+
 
     .cover-label {
       position: absolute;
@@ -2699,7 +2816,7 @@
         <div class="proof-message"><span class="asterisk" aria-hidden="true">Adil...</span><span>Curious by
             nature.<br>Practical by default.</span></div>
         <div class="proof-item"><strong>04 mo.</strong><span>full-stack internship</span></div>
-        <div class="proof-item"><strong>04+</strong><span>projects worth a closer look</span></div>
+        <div class="proof-item"><strong>05</strong><span>projects worth a closer look</span></div>
         <div class="proof-item"><strong>8.15</strong><span>current engineering CGPA</span></div>
       </div>
     </div>
@@ -2715,7 +2832,7 @@
           <article class="project-card reveal">
             <div class="project-cover cover-automark">
               <div class="cover-disc"></div><span class="cover-label mono">COLLEGE OPERATIONS</span><span
-                class="cover-number mono">01 / 04</span>
+                class="cover-number mono">01 / 05</span>
               <div class="mini-admin" aria-hidden="true">
                 <div class="mini-admin-side"><b>A<i>.</i></b><span></span><span></span><span></span><span></span></div>
                 <div class="mini-admin-main"><small>ACADEMIC DASHBOARD</small>
@@ -2754,7 +2871,7 @@
           <article class="project-card reveal">
             <div class="project-cover cover-travel">
               <div class="sun"></div><span class="cover-label mono">TRAVEL TECH</span><span class="cover-number mono">02
-                / 04</span><svg class="travel-route" viewBox="0 0 450 280" fill="none" aria-hidden="true">
+                / 05</span><svg class="travel-route" viewBox="0 0 450 280" fill="none" aria-hidden="true">
                 <path d="M-30 230C84 278 152 60 267 130s161-48 226-98" stroke="#955d45" stroke-width="1.5"
                   stroke-dasharray="6 8" />
                 <circle cx="95" cy="196" r="7" fill="#955d45" />
@@ -2787,9 +2904,34 @@
             </div>
           </article>
           <article class="project-card reveal">
+            <div class="project-cover cover-recover">
+              <div class="recover-orbit"></div>
+              <span class="cover-label mono">PAYMENT OPERATIONS</span>
+              <span class="cover-number mono">03 / 05</span>
+              <div class="recover-panel" aria-hidden="true">
+                <div class="recover-head"><span>RECOVERAI / DECISION ENGINE</span><span class="recover-status">REVIEW</span></div>
+                <div class="recover-title">Recovery insights</div>
+                <div class="recover-subtitle">Failed payment analysis &amp; next-best action</div>
+                <div class="recover-stats">
+                  <div class="recover-stat"><span>PAYMENT STATUS</span><strong>Failed</strong></div>
+                  <div class="recover-stat"><span>NEXT STEP</span><strong>Retry</strong></div>
+                </div>
+                <div class="recover-row"><i></i><span>Payment method check</span><b>REVIEW</b></div>
+                <div class="recover-row"><i></i><span>Recovery recommendation</span><b>READY</b></div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-overline mono"><span>PAYMENT RECOVERY / DECISION LOGIC</span><span>FULL-STACK</span></div>
+              <h3>RecoverAI</h3>
+              <p>A payment recovery tool that analyzes failed-payment context and recommends a next action. The project focuses on turning payment failure signals into a practical recovery workflow.</p>
+              <div class="project-tags"><span>React</span><span>Vite</span><span>FastAPI</span><span>Decision Logic</span><span>REST APIs</span></div>
+              <div class="project-links"><a class="inline-link" href="https://github.com/muhammadadil8095/RecoverAI" target="_blank" rel="noopener noreferrer">View code <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 15 15 4M6 4h9v9" stroke="currentColor" stroke-width="1.7" /></svg></a></div>
+            </div>
+          </article>
+          <article class="project-card reveal">
             <div class="project-cover cover-med">
               <div class="med-halo"></div><span class="cover-label mono">HEALTHCARE / IOT</span><span
-                class="cover-number mono">03 / 04</span>
+                class="cover-number mono">04 / 05</span>
               <div class="monitor" aria-hidden="true">
                 <div class="monitor-head"><span>MEDJARVIS / LIVE MONITOR</span><i></i></div>
                 <div class="monitor-wave"><svg viewBox="0 0 340 85" preserveAspectRatio="none">
@@ -2822,7 +2964,7 @@
           <article class="project-card reveal">
             <div class="project-cover cover-interview">
               <div class="halo"></div><span class="cover-label mono">AI / INTERVIEW TECH</span><span
-                class="cover-number mono">04 / 04</span>
+                class="cover-number mono">05 / 05</span>
               <div class="interview-ui" aria-hidden="true">
                 <div class="interview-head"><b>Interview practice</b><span>SESSION 01 / 05</span></div>
                 <div class="interview-question">Tell me about a technical challenge you solved.</div>
